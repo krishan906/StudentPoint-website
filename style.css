@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: black;
+    background-image: radial-gradient(circle at top right, #FFFF99 0%, transparent 40%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 1695px;
+    margin: auto;
+}
+
+.header {
+    background-color: #333;
+    padding: 20px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.header h1 {
+    color: orange;
+    margin: 0;
+}
+
+.admission-marquee {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.marquee-link {
+    color: white;
+    text-decoration: none;
+}
+
+.marquee-link:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    color: white;
+}
+
+.logo {
+    max-width: 50px;
+    height: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.03cm;
+}
+
+.nav-menu a:hover {
+    color: #ff7f50;
+}
+
+.nav-menu button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.nav-menu button a:hover {
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #111;
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: orange;
+    border-radius: 5px;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #111;
+        width: 100%;
+        display: none;
+        padding: 20px;
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+
+.section-hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-hero div {
+    color: white;
+    text-transform: uppercase;
+}
+
+.section-image {
+    max-width: 75.2vh;
+}
+
+.section-hero h1 {
+    font-family: "Kanit", sans-serif;
+    color: grey;
+}
+
+.section-hero h4 {
+    font-size: 3rem;
+    color: red;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 0.1cm;
+}
+
+.section-hero h5 {
+    font-size: 2rem;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 0.05cm;
+}
+
+/* Key Features Section */
+.key-features {
+    padding: 50px 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.key-features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: yellow;
+}
+
+.feature-card {
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    background-color: #333;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.feature-btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.feature-btn:hover {
+    background-color: darkorange;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #222;
+    color: white;
+    text-align: left;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: darkorange;
+}
+
+/* Map Section */
+.map-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+.map-container iframe {
+    border: 0;
+    display: inline;
+    justify-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.map h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+@media (max-width: 600px) {
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Contact */
+.contact-section {
+    background-color: #111;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 400px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.contact-info i {
+    color: orange;
+    margin-right: 10px;
+    width: 20px;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+    margin-top: 40px;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .section-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        padding-right: 0;
+    }
+
+    .feature-card {
+        width: 45%;
+        margin: 20px auto;
+    }
+
+    .nav-menu {
+        gap: 15px;
+        font-size: 20px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            height: auto;
+        }
+    
+        .nav-menu {
+            flex-direction: row;
+            gap: 10px;
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+
+    .section-hero {
+        gap: 30px;
+        padding: 30px 15px;
+    }
+
+    .section-hero h4 {
+        font-size: 2rem;
+    }
+
+    .section-hero h5 {
+        font-size: 1.3rem;
+    }
+
+    .section-hero h1 {
+        font-size: 1rem;
+    }
+
+    .section-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        width: 90%;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact-info {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .admission-marquee {
+        font-size: 1rem;
+    }
+}

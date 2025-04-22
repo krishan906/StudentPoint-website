@@ -1,0 +1,185 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+.top-bar {
+  width: auto;
+  background-color: #111;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+.home-link {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.home-link:hover {
+  color: white;
+}
+
+.course-section {
+  display: flex;
+  padding: 40px;
+  align-items: top;
+  gap: 40px;
+}
+
+.course-image img {
+  max-width: 497px;
+  height: 494px;
+  border-radius: 10px;
+}
+
+.course-content {
+  max-width: 600px;
+}
+
+.course-content h2 {
+  color: orange;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.faculty-section {
+  background-color: #222;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faculty-section h2 {
+  font-size: 2.5rem;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+.faculty-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.faculty-member {
+  background-color: #333;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faculty-member img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.faculty-member h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: orange;
+}
+
+.faculty-member p {
+  font-size: 1.1rem;
+  color: lightgray;
+  margin-top: 5px;
+}
+
+.faculty-member p strong {
+  color: orange;
+}
+
+.feature-btn {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.feature-btn:hover {
+  background-color: darkorange;
+}
+
+/* =================== MEDIA QUERIES =================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .course-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .course-content {
+    text-align: center;
+  }
+
+  .course-content h2 {
+    font-size: 2rem;
+  }
+
+  .course-image img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .faculty-container {
+    justify-content: center;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .top-bar {
+    text-align: center;
+  }
+
+  .home-link {
+    font-size: 1rem;
+  }
+
+  .course-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .course-content {
+    padding: 0 10px;
+  }
+
+  .course-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .faculty-section h2 {
+    font-size: 2rem;
+  }
+
+  .faculty-member {
+    width: 90%;
+  }
+
+  .feature-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
