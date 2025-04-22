@@ -423,7 +423,7 @@ footer {
         }
     
         .nav-menu {
-            flex-direction: row;
+            flex-direction: column;
             gap: 10px;
             font-size: 16px;
             padding: 0;
